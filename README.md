@@ -1,6 +1,6 @@
  ![Sala Kommun](https://www.sala.se/resources/images/Logotyper/sakn-logotyp-FS-srgb.png)
 # Kontrollansvarig
-Lösning för kontrollansvarig e-tjänst. Ett powershell skript hämtar information om kontrollansvarig från Boverkets hemsida som lagras i MSSQL databas och sedan presenteras i API form på PHP sida.
+Lösning för kontrollansvarig e-tjänst. Ett powershell skript hämtar information om kontrollansvarig från Boverkets hemsida som lagras i MSSQL databas och sedan presenteras i API form på egen PHP sida.
 
 ### Databas MSSQL
 
