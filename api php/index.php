@@ -34,19 +34,19 @@ if(isset($_GET['id'])){
 	$lan=convertcounty($_GET['lan']);
 	$optional='';
 	if(!empty($_GET['fornamn'])){
-		$fornamn=$_GET['fornamn'];
+		$fornamn=preg_replace('/[^a-z\ \-éåäö]/iu', '', $_GET['fornamn']);
 		$optional.="AND name LIKE '%$fornamn%' ";
 	}
 	if(!empty($_GET['efternamn'])){
-		$efternamn=$_GET['efternamn'];
+		$efternamn=preg_replace('/[^a-z\ \-éåäö]/iu', '', $_GET['efternamn']);
 		$optional.="AND name LIKE '%$efternamn%' ";
 	}
 	if(!empty($_GET['foretag'])){
-		$foretag=$_GET['foretag'];
+		$foretag=preg_replace('/[^a-z\ \-éåäö]/iu', '', $_GET['foretag']);
 		$optional.="AND company LIKE '%$foretag%' ";
 	}
 	if(!empty($_GET['postort'])){
-		$postort=$_GET['postort'];
+		$postort=preg_replace('/[^a-z\ \-éåäö]/iu', '', $_GET['postort']);
 		$optional.="AND city LIKE '%$postort%' ";
 	}
 	//echo $lan;
